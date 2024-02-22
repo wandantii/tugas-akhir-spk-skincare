@@ -74,7 +74,7 @@
           <div class="col-sm">
             @foreach($kategoriproduks as $kategoriproduk)
             <div class="row" style="margin:10vh 0px 7vh 0;text-align:center;">
-              <h2 style="color:#fff;"><b>{{ $kategoriproduk->nama }} {{ $kategoriproduk->id_kategoriproduk }}</b></h2>
+              <h2 style="color:#fff;"><b>{{ $kategoriproduk->nama }}</b></h2>
               <?php
                 $countproductbykategori = $produks->where('id_kategoriproduk', $kategoriproduk->id_kategoriproduk)->count();
                 if($countproductbykategori > 0) {
